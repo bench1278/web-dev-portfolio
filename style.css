@@ -1,0 +1,176 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	color: #efefef;
+	font-family: 'Raleway', sans-serif;
+	text-shadow: 1px 1px 15px #000000;
+	background: linear-gradient(
+			rgba(17, 126, 112, 0.75),
+			rgba(0, 88, 255, 0.45)
+		), url(https://images.pexels.com/photos/316093/pexels-photo-316093.jpeg?aut0=compress&cs=tinyrgb&dpr=2&h=750&W=1260);
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+}
+
+main {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	width: 75%;
+}
+
+.overview {
+	padding: 3rem;
+}
+
+.fullname {
+	font-weight: 300;
+	letter-spacing: 3px;
+	margin-bottom: .5rem;
+}
+
+.job-title {
+	color: #ffc107;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: .75rem;
+	margin-bottom: 1rem;
+	font-weight: bolder;
+}
+
+hr {
+	width: 5rem;
+	border: none;
+	height: 2px;
+	background-color: #00BCD4;
+	margin: 1.5rem 0;
+}
+
+.description {
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+	line-height: 1.75;
+}
+
+.works {
+	margin-top: 1.5rem;
+	margin-bottom: 3rem;
+}
+
+.works h2 {
+	font-weight: 300;
+	letter-spacing: 3px;
+	margin-bottom: 1rem;
+}
+
+.works img {
+	width:  60px;
+	height: 60px;
+	object-fit: cover;
+}
+
+.social-media a {
+	color: #efefef;
+	margin: 0 .5rem;
+	font-size: 1.5rem;
+	opacity: .75;
+}
+
+.social-media a:hover {
+	opacity: 1;
+}
+
+.ad {
+	margin: .5rem;
+	font-size: 1rem;
+}
+
+.ad a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+.image-container {
+	width: 100%;
+	padding: 3rem;
+}
+
+.image-container img {
+	object-fit: cover;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin: auto;
+	display: block;
+}
+@media (max-width: 980px) {
+
+   .container {
+       flex-direction: column;
+   }
+
+   .image-container {
+       width: 100%;
+       padding: 3rem 0 0;
+   }
+
+   .overview {
+       order: 1;
+       padding: 3rem 0;
+   }
+
+   main {
+       background: linear-gradient(
+               rgba(0, 255, 222, 0.45),
+               rgba(0, 88, 255, 0.45)
+           ), url(https://images.pexels.com/photos/1034662/pexels-photo-1034662.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+   }
+
+   .fullname,
+   .job-title {
+       text-align: center;
+   }
+
+   .job-title {
+       font-weight: bolder;
+   }
+
+   .description {
+       text-align: center;
+   }
+
+   hr {
+       margin: auto;
+   }
+
+   .contact-btn {
+       display: block;
+       margin: auto;
+   }
+
+   .social-media {
+       text-align: center;
+       margin-top: 3rem;
+   }
+
+   .ad {
+       text-align: center;
+   }
+
+   .works {
+       text-align: center;
+   }
+
+}
